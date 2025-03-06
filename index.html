@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎添加微信</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .qr-code {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .qr-code img {
+            width: 100%;
+            height: auto;
+        }
+        .description {
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>很高兴认识你！</h1>
+        <div class="qr-code">
+            <!-- 替换下面的src为您的微信二维码图片地址 -->
+            <img src="wechat.jpg" alt="微信二维码">
+        </div>
+        <p class="description">欢迎扫描上方二维码添加微信</p>
+    </div>
+</body>
+</html>
