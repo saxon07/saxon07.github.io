@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>欢迎添加微信</title>
+    <title>极客边界 | Geek Frontier</title>
     <style>
         body {
             margin: 0;
@@ -12,23 +12,45 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #f5f5f5;
-            font-family: 'Microsoft YaHei', sans-serif;
+            background-color: #0a192f;
+            font-family: 'Fira Code', 'Microsoft YaHei', monospace;
+            color: #8892b0;
         }
         .container {
             text-align: center;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            background-color: rgba(17, 34, 64, 0.95);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            border: 1px solid #233554;
+            max-width: 600px;
+            width: 90%;
         }
         h1 {
-            color: #333;
+            color: #64ffda;
             margin-bottom: 20px;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+        }
+        .terminal-text {
+            text-align: left;
+            background-color: #112240;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .terminal-text pre {
+            margin: 0;
+            color: #ccd6f6;
         }
         .qr-code {
-            max-width: 300px;
-            margin: 0 auto;
+            max-width: 200px;
+            margin: 30px auto;
+            padding: 15px;
+            background: #112240;
+            border-radius: 8px;
+            border: 1px solid #233554;
         }
         .qr-code img {
             width: 100%;
@@ -36,18 +58,39 @@
         }
         .description {
             margin-top: 20px;
-            color: #666;
+            color: #8892b0;
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #64ffda;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>很高兴认识你！</h1>
+        <h1>{ 极客边界 }</h1>
+        <div class="terminal-text">
+            <pre>
+> whoami
+[极客边界] @ Geek Frontier
+
+> cat profile.json
+{
+    "role": "Software Engineer",
+    "interests": ["编程", "硬件开发", "骑行运动"],
+    "social": {
+        "抖音": "极客边界",
+        "微信群": "扫码加入讨论"
+    }
+}</pre>
+        </div>
         <div class="qr-code">
-            <!-- 替换下面的src为您的微信二维码图片地址 -->
             <img src="wechat.jpg" alt="微信二维码">
         </div>
-        <p class="description">欢迎扫描上方二维码添加微信</p>
+        <p class="description">
+            欢迎扫描二维码加入<span class="highlight">极客边界</span>交流群<br>
+            让我们一起探讨技术，分享经验！
+        </p>
     </div>
 </body>
 </html>
