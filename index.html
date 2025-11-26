@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -37,30 +37,38 @@
             background-color: #112240;
             padding: 20px;
             border-radius: 5px;
-            margin: 20px 0;
+            margin: 20px auto;
             line-height: 1.6;
+            display: inline-block;
         }
         .terminal-text pre {
             margin: 0;
             color: #ccd6f6;
         }
-        .qr-container {
+        .qr-section {
             display: flex;
-            justify-content: space-between;
-            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
             margin: 30px auto;
         }
+        .qr-container {
+            flex-shrink: 0;
+        }
         .qr-code {
-            flex: 1;
             padding: 15px;
             background: #112240;
             border-radius: 8px;
             border: 1px solid #233554;
-            max-width: 200px;
+            width: 180px;
+            height: 230px;
+            display: flex;
+            flex-direction: column;
         }
         .qr-code img {
             width: 100%;
             height: auto;
+            flex-grow: 1;
         }
         .qr-code-title {
             color: #64ffda;
@@ -68,18 +76,26 @@
             font-size: 0.9em;
         }
         .description-container {
+            width: 180px;
+            padding: 15px;
+            background: #112240;
+            border-radius: 8px;
+            border: 1px solid #233554;
+            height: 230px;
             display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            margin-top: 20px;
+            flex-direction: column;
+        }
+        .description-title {
+            color: #64ffda;
+            margin-bottom: 10px;
+            font-size: 0.9em;
         }
         .description {
-            flex: 1;
             color: #8892b0;
-            line-height: 1.6;
-            max-width: 200px;
-            text-align: left;
+            line-height: 1.8;
             font-size: 0.9em;
+            margin: 0;
+            text-align: left;
         }
         .highlight {
             color: #64ffda;
@@ -101,34 +117,27 @@
     "social": {
         "抖音": "极客宗山",
         "视频号": "极客宗山",
-        "小红书": "极客宗山",
-        "微信群": "扫码加入讨论"
+        "小红书": "极客宗山"
     }
 }</pre>
         </div>
-        <div class="qr-container">
-            <div class="qr-code">
-                <div class="qr-code-title">个人微信</div>
-                <img src="img/jkzs.jpg" alt="个人微信二维码">
+        <div class="qr-section">
+            <div class="qr-container">
+                <div class="qr-code">
+                    <div class="qr-code-title">个人微信</div>
+                    <img src="img/jkzs.jpg" alt="个人微信二维码">
+                </div>
             </div>
-            <div class="qr-code">
-                <div class="qr-code-title">技术交流群</div>
-                <img src="img/group1.jpg" alt="群二维码">
-            </div>
-        </div>
-        <div class="description-container">
-            <div class="description">
-                <span class="highlight">个人微信</span><br>
-                • 一对一技术咨询<br>
-                • 个性化解决方案<br>
-                • 资源获取通道
-            </div>
-            <div class="description">
-                <span class="highlight">技术交流群</span><br>
-                • 免费NAS技术支持<br>
-                • 优质资源分享<br>
-                • 同好交流讨论<br>
-                • 最新动态通知
+            <div class="description-container">
+                <div class="description-title">联系方式</div>
+                <div class="description">
+                    • 一对一技术咨询<br>
+                    • 个性化解决方案<br>
+                    • 优质资源分享<br>
+                    • 免费NAS技术支持<br>
+                    • 同好交流讨论<br>
+                    • 最新动态通知
+                </div>
             </div>
         </div>
     </div>
